@@ -37,5 +37,5 @@ variable "tags" {
 variable "create_igw" {
   description = "Create an Internet Gateway for public subnets"
   type        = bool
-  default     = true
+  default     = false
 }
