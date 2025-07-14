@@ -1,3 +1,10 @@
+
+variable "name" {
+  description = "VPC name"
+  type        = string
+  default     = "main"
+}
+
 variable "cidr_block" {
   description = "CIDR block for the VPC"
   type        = string
@@ -20,12 +27,6 @@ variable "instance_tenancy" {
   description = "Tenancy for instances launched into the VPC"
   type        = string
   default     = "default"
-}
-
-variable "name" {
-  description = "VPC name"
-  type        = string
-  default     = "main"
 }
 
 variable "tags" {
