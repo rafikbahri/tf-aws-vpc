@@ -21,7 +21,6 @@ No modules.
 | Name | Type |
 |------|------|
 | [aws_internet_gateway.igw](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/internet_gateway) | resource |
-| [aws_route_table.public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table) | resource |
 | [aws_vpc.vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc) | resource |
 
 ## Inputs
@@ -41,7 +40,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_igw_id"></a> [igw\_id](#output\_igw\_id) | ID of the Internet Gateway |
-| <a name="output_public_internet_route_table_id"></a> [public\_internet\_route\_table\_id](#output\_public\_internet\_route\_table\_id) | ID of the public internet route table |
 | <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | ARN of the VPC |
 | <a name="output_vpc_cidr_block"></a> [vpc\_cidr\_block](#output\_vpc\_cidr\_block) | CIDR block of the VPC |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | VPC ID |
