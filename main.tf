@@ -11,7 +11,6 @@ resource "aws_vpc" "vpc" {
   )
 }
 
-# Internet for public subnets
 resource "aws_internet_gateway" "igw" {
   count  = var.create_igw ? 1 : 0
   vpc_id = aws_vpc.vpc.id
@@ -21,16 +20,4 @@ resource "aws_internet_gateway" "igw" {
     },
     var.tags
   )
-}
-
-resource "aws_route_table" "public" {
-  count  = var.create_igw ? 1 : 0
-  vpc_id = aws_vpc.vpc.id
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.igw[0].id
-  }
-  tags = {
-    Name = "PublicInternetRouteTable"
-  }
 }

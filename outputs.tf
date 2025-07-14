@@ -17,8 +17,3 @@ output "igw_id" {
   description = "ID of the Internet Gateway"
   value       = try(aws_internet_gateway.igw[0].id, "")
 }
-
-output "public_internet_route_table_id" {
-  description = "ID of the public internet route table"
-  value       = try(aws_route_table.public[0].id, "")
-}
